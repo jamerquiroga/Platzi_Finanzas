@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5ne-gI-utA">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyState" translatesAutoresizingMaskIntoConstraints="NO" id="qdx-Ea-G29">
+                    <rect key="frame" x="35.5" y="122" width="304" height="243"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="243" id="TOY-lA-xmr"/>
+                        <constraint firstAttribute="width" constant="304" id="qpC-34-fz9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSP-TQ-hkw">
+                    <rect key="frame" x="20" y="381" width="335" height="98.5"/>
+                    <string key="text">You don’t have
+any transactions</string>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                    <color key="textColor" name="GreenColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To start press the add button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOW-oT-fc0">
+                    <rect key="frame" x="20" y="487.5" width="335" height="23.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                    <color key="textColor" name="GrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qdx-Ea-G29" firstAttribute="centerY" secondItem="m0O-HQ-rSC" secondAttribute="centerY" constant="-100" id="0zU-It-9SW"/>
+                <constraint firstItem="QSP-TQ-hkw" firstAttribute="leading" secondItem="m0O-HQ-rSC" secondAttribute="leading" constant="20" id="7lD-Yk-rDN"/>
+                <constraint firstItem="qdx-Ea-G29" firstAttribute="centerX" secondItem="m0O-HQ-rSC" secondAttribute="centerX" id="AyL-qJ-jCT"/>
+                <constraint firstItem="aOW-oT-fc0" firstAttribute="leading" secondItem="m0O-HQ-rSC" secondAttribute="leading" constant="20" id="Co6-Aj-Abt"/>
+                <constraint firstItem="aOW-oT-fc0" firstAttribute="top" secondItem="QSP-TQ-hkw" secondAttribute="bottom" constant="8" id="FId-bB-Tbv"/>
+                <constraint firstItem="aOW-oT-fc0" firstAttribute="top" secondItem="QSP-TQ-hkw" secondAttribute="bottom" constant="8" id="Kaa-da-oX2"/>
+                <constraint firstItem="m0O-HQ-rSC" firstAttribute="trailing" secondItem="aOW-oT-fc0" secondAttribute="trailing" constant="20" id="MLX-Tv-es3"/>
+                <constraint firstItem="QSP-TQ-hkw" firstAttribute="top" secondItem="qdx-Ea-G29" secondAttribute="bottom" constant="16" id="ddt-K5-ETf"/>
+                <constraint firstItem="m0O-HQ-rSC" firstAttribute="trailing" secondItem="QSP-TQ-hkw" secondAttribute="trailing" constant="20" id="oKR-RJ-yJn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="m0O-HQ-rSC"/>
+            <point key="canvasLocation" x="-130" y="-170"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EmptyState" width="308" height="245"/>
+        <namedColor name="GrayColor">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
